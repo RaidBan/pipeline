@@ -1,0 +1,17 @@
+pipeline {
+	agent {
+		node {
+			label 'localhost'
+		}
+	}
+	stages {
+	
+		stage('Checkout') {
+			steps {
+				sh '''git clone https://github.com/RaidBan/pipeline.git'''		
+				sh '''ll'''
+				echo 'step Git Checkout'
+			}
+
+	}
+}
