@@ -5,7 +5,9 @@ pipeline {
 	
 		stage('Checkout') {
 			steps {
-				sh '''ls -la'''
+				sh '''#!/bin/bash
+
+					ll'''
 				echo 'step Git Checkout'
 			}
 
