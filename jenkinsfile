@@ -5,8 +5,7 @@ pipeline {
 	
 		stage('Checkout') {
 			steps {
-				sh '''git clone https://github.com/RaidBan/pipeline.git'''		
-				sh '''ll'''
+				sh '''ls -la'''
 				echo 'step Git Checkout'
 			}
 
