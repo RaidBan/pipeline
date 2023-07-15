@@ -11,15 +11,7 @@ pipeline {
 		}
 		stage('Docker') {
 			steps {
-				script {
-					prog = '$(ls *.py)'
-					echo $prog
-					echo 'FROM python:lastest \n COPY ./$prog . \n ENTRYPOINT python $prog'> Dockerfile
-					docker build .					
-					dockerid= '$(docker build . | grep Successfully) | awk '{print $3}''
-					echo $dockerid
-					docker run $dockerid --name jenkinsdocker
-
+				sh '''bash bash.sh'''
 				}
 			}	
 		}
