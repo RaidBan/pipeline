@@ -9,6 +9,13 @@ pipeline {
 			steps {
 				sh '''ls -la'''
 				echo 'step Git Checkout'
+				sh '''
+					pwd
+					cat /etc/os-release
+					whoami
+
+				'''
+				
 			}
 		}
 		
