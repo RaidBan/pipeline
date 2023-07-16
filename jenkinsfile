@@ -12,7 +12,6 @@ pipeline {
 				sh '''
 					pwd
 					cat /etc/os-release
-					node --version
 					python3 --version
 					python3 print.py
 				'''
