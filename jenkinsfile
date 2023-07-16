@@ -12,7 +12,7 @@ pipeline {
 				sh '''
 					pwd
 					cat /etc/os-release
-					whoami
+					node --version
 
 				'''
 				
