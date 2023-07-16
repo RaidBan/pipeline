@@ -13,8 +13,8 @@ pipeline {
 					pwd
 					cat /etc/os-release
 					node --version
-					python --version
-					python print.py
+					python3 --version
+					python3 print.py
 				'''
 				
 			}
