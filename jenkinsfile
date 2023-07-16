@@ -11,11 +11,7 @@ pipeline {
 				echo 'step Git Checkout'
 			}
 		}
-		stage('Docker') {
-			steps {
-				sh '''bash bash.sh'''
-			}
-		}	
+		
 	}
 }
 
